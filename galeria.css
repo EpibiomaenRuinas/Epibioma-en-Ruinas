@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('fonts/coolvetica\ rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Coolvetica Condensed';
+    src: url('fonts/coolvetica\ condensed\ rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Coolvetica Crammed';
+    src: url('fonts/coolvetica\ crammed\ rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+}
+
+/* Tipografía base */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #e6e6c7;
+    background-image: url('imagenes/fondo1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header superior */
+.top-bar {
+    font-family: 'Coolvetica', sans-serif;
+    background-color: #a2c548;
+    text-align: center;
+    padding: 15px;
+    font-size: 100%;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0f150d;
+    border-top: 2px solid #5b6a2f;
+    border-bottom: 2px solid #5b6a2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px; /* elimina padding para que botones se ajusten */
+}
+
+/* Lista de enlaces */
+.nav-links {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+}
+
+/* Cada botón */
+.nav-links li {
+    height: 100%;
+    flex: 1;
+    list-style: none;
+}
+
+/* Estilo de los enlaces */
+.nav-links a {
+    font-family: 'Coolvetica', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 110%;
+    background-color: #0f150d;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    letter-spacing: 4px;
+}
+
+/* Activo */
+.nav-links a.active {
+    background-color: #63752c;
+}
+
+.nav-links a.active:hover {
+    background-color: #485520;
+}
+
+/* Hover */
+.nav-links a:hover {
+    background-color: #63752c;
+}
+
+/* Logo en el centro */
+.nav-logo {
+    height: 80px;
+    padding: 0 30px;
+}
+
+/* Hero */
+.hero {
+    background-image: url('imagenes/encabezado.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 800px; /* Altura mínima del hero */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Por si hay texto más grande */
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 1800%;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: 10px;
+    color: #dcdfc2;
+}
+
+.hero h2 {
+    font-family: 'Coolvetica Condensed', sans-serif;
+    font-size: 1200%;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    color: #dcdfc2;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #a2c548;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+
+.footer-texto {
+    font-family: 'Coolvetica', sans-serif;
+    flex: 1;
+    font-size: 400%;
+}
+
+.titu {
+    font-size: 50%;
+}
+
+.footer-texto.derecha {
+    text-align: right;
+}
+
+.footer-texto.izquierda {
+    text-align: left;
+}
+
+.footer-imagen {
+    flex: 0 0 auto;
+}
+
+.footer-imagen img {
+    height: 160px;
+    width: auto;
+}
+
+/* Barra redes sociales con imágenes */
+.barra-redes {
+    background-color: #83a069;
+    padding: 10px;
+    text-align: center;
+}
+
+.barra-redes a {
+    margin: 0 50px;
+}
+
+.barra-redes img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.barra-redes img:hover {
+    transform: scale(1.2);
+}
