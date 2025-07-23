@@ -142,7 +142,163 @@ body {
     color: #dcdfc2;
 }
 
+.descripcion{
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
 
+.descripcion h2{
+    font-family: 'Coolvetica Crammed', sans-serif;
+    font-size: 400%;
+    color: #a2c548;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+    letter-spacing: 10px;
+}
+
+.descripcion p{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 140%;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #dcdfc2;
+}
+
+.fichas-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.ficha-tecnica {
+    background-color: rgba(47,48,44,0.8);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 20px;
+    height: 800px;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.ficha-tecnica.invertida {
+    flex-direction: row-reverse;
+}
+
+.ficha-tecnica .carrusel {
+    flex: 1 1 45%;
+    max-width: 45%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.carrusel .imagenes {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.carrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(51, 51, 51, 0.7);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+.carrusel .prev { left: 0; }
+.carrusel .next { right: 0; }
+
+.ficha-tecnica .info {
+    flex: 1 1 50%;
+    max-width: 50%;
+    overflow-y: auto;
+    font-family: 'Myriad Pro', sans-serif;
+    text-align: justify;
+    padding-right: 1%;
+    color: #ffffff;
+}
+
+.ficha-tecnica .info h2 {
+    font-size: 500%;
+    font-family: 'Coolvetica Crammed', sans-serif;
+    margin-top: 0;
+    letter-spacing: 5px;
+    color: #dcdfc2;
+}
+
+.ficha-tecnica p {
+    margin: 6px 0;
+    font-size: 120%;
+}
+
+.ficha-tecnica .info::-webkit-scrollbar {
+    width: 6px;
+}
+.ficha-tecnica .info::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.ficha-tecnica .info::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #bbb;
+    text-decoration: none;
+}
 
 /* Footer */
 .footer {

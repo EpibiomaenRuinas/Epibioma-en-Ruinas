@@ -148,6 +148,7 @@ body {
     max-width: 1400px;
     margin: auto;
     flex-wrap: wrap;
+    text-align: justify;
 }
 
 .columna {
