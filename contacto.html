@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epibioma: en ruinas</title>
-    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="icon" href="imagenes/logo3.png" type="image/x-icon">
 </head>
 <body>
@@ -24,8 +24,8 @@
         <img src="imagenes/logo1.png" alt="Logo Epibioma" class="nav-logo">
         <ul class="nav-links">
             <li><a href="artistas.html">artistas</a></li>
-            <li><a href="galeria.html" class="active">galería</a></li>
-            <li><a href="contacto.html">contacto</a></li>
+            <li><a href="galeria.html">galería</a></li>
+            <li><a href="contacto.html" class="active">contacto</a></li>
         </ul>
     </nav>
 
@@ -35,36 +35,31 @@
         <h2>en ruinas</h2>
     </section>
 
-    <div class="descripcion">
-        <h2>Galeria de Fotos</h2>
-        <p>Aqui van las fotografias sacadas en la muestra</p>
+    <section class="seccion-contacto">
+    <h2 class="titulo-contacto">Contáctanos</h2>
+
+    <form class="formulario-contacto" action="mailto:epibiomaenruinas@gmail.com" method="POST" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="redes-contacto">
+        <h3>Síguenos en redes</h3>
+        <div class="iconos-redes">
+            <a href="https://www.instagram.com/ebm.rns/" target="_blank"><img src="imagenes/instab.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/share/1CGWsqV1M6/" target="_blank"><img src="imagenes/faceb.png" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@ebm.rns?_t=ZS-8yH2kiD5Hk1&_r=1" target="_blank"><img src="imagenes/tiktok.png" alt="TikTok"></a>
+        </div>
     </div>
-
-    <div class="galeria">
-
-  <!-- Carrusel contenedor -->
-  <div class="carousel-container">
-    <div class="carousel" id="carousel">
-      <!-- Las páginas con imágenes se agregan desde JS -->
-    </div>
-  </div>
-
-  <!-- Flechas -->
-  <div class="nav left" onclick="prevPage()">&#10094;</div>
-  <div class="nav right" onclick="nextPage()">&#10095;</div>
-
-  <!-- Indicadores -->
-  <div class="dots" id="dots"></div>
-</div>
-
-<!-- Modal -->
-<div id="modal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modal-img">
-</div>
-
-     <script src="galeria.js"></script>
-
+</section>
 
     <footer class="footer" id="contacto">
         <div class="footer-texto izquierda">
