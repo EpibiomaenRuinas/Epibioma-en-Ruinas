@@ -172,7 +172,7 @@ body {
     gap: 60px;
 }
 .ficha-tecnica {
-    background-color: rgba(47,48,44,0.8);
+    background-image: url('imagenes/fondoA.jpg');
     border-radius: 15px;
     padding: 35px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
