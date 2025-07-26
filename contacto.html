@@ -11,7 +11,7 @@
 
     <!-- Header superior -->
     <div class="top-bar">
-        [colectivo equipo] • artista • [colectivo equipo] • artista • [colectivo equipo] • artista • [colectivo equipo]
+        Jaime Sara Bastida • Colectivo Bak.NET • Ana Sofía Vázquez Morales • Colectivo Perdido • Nayeli de la Torre Ortiz • Colectivo Kryzalida • Abril Estefani Torres Ovando
     </div>
 
     <!-- Navegación principal -->
@@ -35,25 +35,20 @@
         <h2>en ruinas</h2>
     </section>
 
-    <section class="seccion-contacto">
-    <h2 class="titulo-contacto">Contáctanos</h2>
+  <section class="contacto">
+    <h2>Contáctanos</h2>
 
-    <form class="formulario-contacto" action="mailto:epibiomaenruinas@gmail.com" method="POST" enctype="text/plain">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
+    <form id="contact-form">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="correo" placeholder="Tu correo electrónico" required />
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+      <p id="form-status"></p>
     </form>
 
-    <div class="redes-contacto">
-        <h3>Síguenos en redes</h3>
-        <div class="iconos-redes">
+    <div class="redes-sociales">
+      <h3>Síguenos en:</h3>
+        <div class="iconos">
             <a href="https://www.instagram.com/ebm.rns/" target="_blank"><img src="imagenes/instab.png" alt="Instagram"></a>
             <a href="https://www.facebook.com/share/1CGWsqV1M6/" target="_blank"><img src="imagenes/faceb.png" alt="Facebook"></a>
             <a href="https://www.tiktok.com/@ebm.rns?_t=ZS-8yH2kiD5Hk1&_r=1" target="_blank"><img src="imagenes/tiktok.png" alt="TikTok"></a>
@@ -64,7 +59,6 @@
     <footer class="footer" id="contacto">
         <div class="footer-texto izquierda">
             <p>Epibioma en ruinas</p>
-            <p class="titu">Contactanos:</p>
         </div>
         <div class="footer-imagen">
             <img src="imagenes/logo2.png" alt="logo colectivo">
@@ -74,12 +68,9 @@
         </div>
     </footer>
 
-    <div class="barra-redes">
-        <a href="https://www.instagram.com/ebm.rns/" target="_blank"><img src="imagenes/insta.png" alt="Instagram"></a>
-        <a href="https://www.facebook.com/share/1CGWsqV1M6/" target="_blank"><img src="imagenes/face.png" alt="Facebook"></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=epibiomaenruinas@gmail.com" target="_blank"><img src="imagenes/gmail.png" alt="Gmail"></a>
-        <a href="https://www.tiktok.com/@ebm.rns?_t=ZS-8yH2kiD5Hk1&_r=1" target="_blank"><img src="imagenes/" alt="TikTok"></a>
-    </div>
+    <!-- Cargar EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="contacto.js"></script>
 
 </body>
 </html>

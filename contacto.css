@@ -142,82 +142,83 @@ body {
     color: #dcdfc2;
 }
 
-.seccion-contacto {
-    background-color: rgba(15, 21, 13, 0.85);
-    padding: 60px 40px;
-    color: #e6e6c7;
+.contacto {
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.contacto h2 {
+    font-family: 'Coolvetica Crammed', sans-serif;
     text-align: center;
-    font-family: 'Coolvetica', sans-serif;
-}
-
-.titulo-contacto {
-    font-size: 300%;
-    margin-bottom: 30px;
-    letter-spacing: 4px;
-}
-
-.formulario-contacto {
-    max-width: 600px;
-    margin: 0 auto 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
-}
-
-.formulario-contacto label {
-    font-size: 120%;
-    margin-bottom: 5px;
-}
-
-.formulario-contacto input,
-.formulario-contacto textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 110%;
-    font-family: 'Myriad Pro', sans-serif;
-}
-
-.formulario-contacto button {
-    margin-top: 10px;
-    padding: 12px;
-    background-color: #a2c548;
-    color: black;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 110%;
-    transition: background-color 0.3s ease;
-}
-
-.formulario-contacto button:hover {
-    background-color: #889c47;
-}
-
-.redes-contacto h3 {
-    font-size: 200%;
     margin-bottom: 20px;
+    color: #a2c548;
+    font-size: 650%;
+    letter-spacing: 10px;
 }
 
-.iconos-redes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.iconos-redes img {
-    height: 50px;
-    width: auto;
-    transition: transform 0.3s ease;
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #202020;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: 'Myriad Pro', sans-serif;
 }
 
-.iconos-redes img:hover {
-    transform: scale(1.2);
+form button {
+  background-color: #a2c548;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+form button:hover {
+  background-color: #809c3a;
+}
+
+#form-status {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.redes-sociales {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.redes-sociales h3 {
+    margin-bottom: 10px;
+    font-family: 'Coolvetica Crammed', sans-serif;
+    text-align: center;
+    color: #a2c548;
+    font-size: 300%;
+    letter-spacing: 10px;
+}
+
+.iconos a img {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.iconos a img:hover {
+  transform: scale(1.2);
+}
 /* Footer */
 .footer {
     background-color: #a2c548;
@@ -235,10 +236,6 @@ body {
     font-size: 400%;
 }
 
-.titu {
-    font-size: 50%;
-}
-
 .footer-texto.derecha {
     text-align: right;
 }
@@ -254,25 +251,4 @@ body {
 .footer-imagen img {
     height: 160px;
     width: auto;
-}
-
-/* Barra redes sociales con imágenes */
-.barra-redes {
-    background-color: #83a069;
-    padding: 10px;
-    text-align: center;
-}
-
-.barra-redes a {
-    margin: 0 50px;
-}
-
-.barra-redes img {
-    height: 50px;
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-.barra-redes img:hover {
-    transform: scale(1.2);
 }
