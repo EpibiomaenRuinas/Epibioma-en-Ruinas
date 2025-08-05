@@ -42,6 +42,11 @@ body {
     letter-spacing: 2px;
 }
 
+.top-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
     background-color: #0f150d;

@@ -40,6 +40,11 @@ body {
     letter-spacing: 2px;
 }
 
+.top-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
     background-color: #0f150d;
@@ -246,6 +251,11 @@ body {
 .ficha-tecnica p {
     margin: 6px 0;
     font-size: 120%;
+}
+
+.ficha-tecnica p a{
+    color: inherit;
+    text-decoration: none;
 }
 
 .ficha-tecnica .info::-webkit-scrollbar {
