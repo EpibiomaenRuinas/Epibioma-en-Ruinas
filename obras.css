@@ -154,7 +154,6 @@ body {
     font-family: 'Coolvetica Crammed', sans-serif;
     font-size: 400%;
     color: #a2c548;
-    text-transform: lowercase;
     margin-bottom: 10px;
     letter-spacing: 10px;
 }
@@ -322,10 +321,6 @@ body {
     font-family: 'Coolvetica', sans-serif;
     flex: 1;
     font-size: 400%;
-}
-
-.titu {
-    font-size: 50%;
 }
 
 .footer-texto.derecha {
