@@ -268,3 +268,134 @@ form button:hover {
     height: 160px;
     width: auto;
 }
+
+@media (max-width: 900px) {
+    /* Top bar: texto más pequeño y que se ajuste */
+  .top-bar {
+    font-size: 3vw;
+    padding: 10px 5px;
+    white-space: normal;
+  }
+  /* Navbar vertical y centrado */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .nav-links {
+    padding: 0;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    flex: none;
+    margin: 5px 8px;
+  }
+
+  .nav-logo {
+    height: 60px;
+    padding: 10px 0;
+    order: 0; /* logo arriba */
+  }
+
+  /* Hero más pequeño */
+  .hero {
+    min-height: 400px;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 700%;
+    letter-spacing: 5px;
+  }
+
+  .hero h2 {
+    font-size: 400%;
+    letter-spacing: 5px;
+  }
+
+  /* Contenedor de contacto con margen reducido */
+  .contacto {
+    margin: 30px 10px;
+    max-width: 100%;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .contacto h2 {
+    font-size: 350%;
+    letter-spacing: 5px;
+  }
+
+  /* Formulario se adapta ancho */
+  form input,
+  form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Redes sociales: iconos más pequeños y separados */
+  .iconos a img {
+    width: 60px;
+    margin: 0 8px;
+  }
+
+  .redes-sociales h3 {
+    font-size: 200%;
+    letter-spacing: 5px;
+  }
+
+  /* Footer en columna */
+  .footer {
+    flex-direction: column;
+    padding: 5px 10px 20px;
+    text-align: center;
+  }
+
+  .footer-texto {
+    font-size: 150%;
+    margin: 10px 0;
+  }
+
+  .footer-imagen img {
+    height: 100px;
+  }
+}
+
+/* Pantallas muy pequeñas (celulares) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 400%;
+  }
+
+  .hero h2 {
+    font-size: 200%;
+  }
+
+  .contacto h2 {
+    font-size: 250%;
+  }
+
+  form input,
+  form textarea {
+    font-size: 12px;
+  }
+
+  form button {
+    font-size: 12px;
+  }
+
+  .redes-sociales h3 {
+    font-size: 150%;
+  }
+}

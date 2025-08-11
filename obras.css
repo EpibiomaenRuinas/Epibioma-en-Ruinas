@@ -247,12 +247,17 @@ body {
     color: #dcdfc2;
 }
 
+.ficha-tecnica .info h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .ficha-tecnica p {
     margin: 6px 0;
     font-size: 120%;
 }
 
-.ficha-tecnica p a{
+.ficha-tecnica p a {
     color: inherit;
     text-decoration: none;
 }
@@ -370,4 +375,157 @@ body {
 
 .barra-redes img:hover {
     transform: scale(1.2);
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 900px) {
+    /* Top bar: texto más pequeño y que se ajuste */
+  .top-bar {
+    font-size: 3vw;
+    padding: 10px 5px;
+    white-space: normal;
+  }
+    /* Navbar se acomoda verticalmente */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    /* Los dos ul de nav-links se acomodan en fila y con menos espacio */
+    .nav-links {
+        padding: 0;
+        margin: 5px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links li {
+        flex: none;
+        margin: 5px 8px;
+    }
+
+    /* Logo más pequeño y con margen */
+    .nav-logo {
+        height: 60px;
+        padding: 10px 0;
+        order: 0; /* para que el logo esté arriba */
+    }
+
+    /* Ajustar hero */
+    .hero {
+        min-height: 400px;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 700%;
+        letter-spacing: 5px;
+    }
+
+    .hero h2 {
+        font-size: 400%;
+        letter-spacing: 5px;
+    }
+
+    /* Texto descriptivo */
+    .descripcion {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .descripcion h2 {
+        font-size: 250%;
+        letter-spacing: 5px;
+    }
+
+    .descripcion p {
+        font-size: 110%;
+    }
+
+    /* Fichas técnicas cambian a columna */
+    .fichas-container {
+        padding: 20px 10px;
+        gap: 40px;
+    }
+
+    .ficha-tecnica {
+        flex-direction: column !important; /* fuerza columna */
+        height: auto;
+        padding: 20px;
+    }
+
+    .ficha-tecnica.invertida {
+        flex-direction: column !important;
+    }
+
+    .ficha-tecnica .carrusel, .ficha-tecnica .info {
+        max-width: 100%;
+        flex: none;
+        height: auto;
+    }
+
+    .ficha-tecnica .info {
+        margin-top: 20px;
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .ficha-tecnica .info h2 {
+        font-size: 300%;
+        letter-spacing: 3px;
+    }
+
+    .ficha-tecnica p {
+        font-size: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        padding: 2px 15px 20px;
+        text-align: center;
+    }
+
+    .footer-texto {
+        font-size: 150%;
+        margin: 10px 0;
+    }
+
+    .footer-imagen img {
+        height: 100px;
+    }
+
+    /* Barra redes sociales */
+    .barra-redes a {
+        margin: 0 15px;
+    }
+
+    .barra-redes img {
+        height: 35px;
+    }
+}
+
+/* Para pantallas aún más pequeñas (celulares muy pequeños) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 400%;
+    }
+    .hero h2 {
+        font-size: 200%;
+    }
+
+    .descripcion h2 {
+        font-size: 200%;
+    }
+
+    .descripcion p {
+        font-size: 90%;
+    }
+
+    .footer-texto {
+        font-size: 200%;
+    }
 }

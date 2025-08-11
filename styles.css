@@ -253,3 +253,127 @@ body {
 .barra-redes img:hover {
     transform: scale(1.2);
 }
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 900px) {
+    /* Top bar: texto más pequeño y que se ajuste */
+  .top-bar {
+    font-size: 3vw;
+    padding: 10px 5px;
+    white-space: normal;
+  }
+    /* Navbar se acomoda verticalmente */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    /* Los dos ul de nav-links se acomodan en fila y con menos espacio */
+    .nav-links {
+        padding: 0;
+        margin: 5px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links li {
+        flex: none;
+        margin: 5px 8px;
+    }
+
+    /* Logo más pequeño y con margen */
+    .nav-logo {
+        height: 60px;
+        padding: 10px 0;
+        order: 0; /* para que el logo esté arriba */
+    }
+
+    /* Ajustar hero */
+    .hero {
+        min-height: 400px;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 400%;
+        letter-spacing: 5px;
+    }
+
+    .hero h2 {
+        font-size: 200%;
+        letter-spacing: 5px;
+    }
+
+    /* Contenido: apilar columnas */
+  .contenido {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 30px;
+  }
+
+  .columna {
+    flex: 1 1 100%;
+  }
+
+  /* Texto más legible */
+  .columna h2 {
+    font-size: 10vw;
+    letter-spacing: 5px;
+  }
+
+  .columna p {
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        padding: 2px 15px 20px;
+        text-align: center;
+    }
+
+    .footer-texto {
+        font-size: 150%;
+        margin: 10px 0;
+    }
+
+    .footer-imagen img {
+        height: 100px;
+    }
+
+    /* Barra redes sociales */
+    .barra-redes a {
+        margin: 0 15px;
+    }
+
+    .barra-redes img {
+        height: 35px;
+    }
+}
+
+
+/* Ajustes para tablets y pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero h1 {
+    font-size: 10vw;
+  }
+  .hero h2 {
+    font-size: 6vw;
+  }
+  .columna h2 {
+    font-size: 4vw;
+  }
+  .columna p {
+    font-size: 2.2vw;
+  }
+  .footer-texto {
+    font-size: 3vw;
+  }
+  .barra-redes img {
+    height: 45px;
+  }
+}
