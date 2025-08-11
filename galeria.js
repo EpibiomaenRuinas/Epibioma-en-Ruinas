@@ -1,10 +1,6 @@
 // Lista de imágenes (reemplaza con tus imágenes reales)
 const imageList = [
-  'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg',
-  'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg',
-  'img9.jpg', 'img10.jpg', 'img11.jpg', 'img12.jpg',
-  'img13.jpg', 'img14.jpg', 'img15.jpg', 'img16.jpg',
-  'img17.jpg', 'img18.jpg', 'img19.jpg', 'img20.jpg', 'img21.jpg', 'img22.jpg', 'img23.jpg', 'img24.jpg', 'img25.jpg'
+    'imagenes/montaje/7.3Ecosistemas.png','imagenes/montaje/7.2Ecosistemas.png','imagenes/montaje/7.1Ecosistemas.png','imagenes/montaje/6.3TodoLoQueTocas.png','imagenes/montaje/6.2TodoLoQueTocas.png','imagenes/montaje/6.1TodoLoQueTocas.png','imagenes/montaje/5.3Abismo.png','imagenes/montaje/5.2Abismo.png','imagenes/montaje/5.1Abismo.png','imagenes/montaje/4.3iaAmbiental.png','imagenes/montaje/4.2iaAmbiental.png','imagenes/montaje/4.1iaAmbiental.png','imagenes/montaje/3.3Arena.png','imagenes/montaje/3.2Arena.png','imagenes/montaje/3.1Arena.png','imagenes/montaje/2.3EspecieFallida.png','imagenes/montaje/2.2EspecieFallida.png','imagenes/montaje/2.1EspecieFallida.png','imagenes/montaje/1.3Robot_z.png','imagenes/montaje/1.2Robot_z.png','imagenes/montaje/1.1Robot_z.png'
 ];
 
 const IMAGES_PER_PAGE = 12;

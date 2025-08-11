@@ -209,6 +209,17 @@ body {
     text-align: right;
 }
 
+.footer-texto.derecha a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.footer-texto.derecha a:hover {
+    transform: scale(1.05);
+}
+
 .footer-texto.izquierda {
     text-align: left;
 }
