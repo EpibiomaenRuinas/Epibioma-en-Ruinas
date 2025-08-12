@@ -27,12 +27,16 @@ function createGalleryPages() {
       const card = document.createElement('div');
       card.classList.add('card');
 
-      // Guardamos la url de la imagen en data-bg para cargarla luego
-      card.setAttribute('data-bg', src);
+      // Crear imagen con carga lazy nativa
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = "Imagen galería";
+      img.loading = "lazy";
 
-      // Onclick abrir modal con la imagen real
+      // Al hacer click, abrir modal con la imagen
       card.onclick = () => openModal(src);
 
+      card.appendChild(img);
       page.appendChild(card);
     });
 
@@ -53,31 +57,6 @@ function updateCarousel() {
 
   document.querySelectorAll('.dot').forEach((dot, i) => {
     dot.classList.toggle('active', i === currentPage);
-  });
-
-  // Forzar carga de imágenes de la página activa (y opcionalmente las vecinas)
-  lazyLoadPage(currentPage);
-  // Opcional: lazyLoadPage(currentPage + 1);
-  // Opcional: lazyLoadPage(currentPage - 1);
-}
-
-// Carga las imágenes de fondo de la página indicada
-function lazyLoadPage(pageIndex) {
-  const pages = document.querySelectorAll('.gallery-page');
-  if (pageIndex < 0 || pageIndex >= pages.length) return;
-
-  const page = pages[pageIndex];
-  const cards = page.querySelectorAll('.card');
-
-  cards.forEach(card => {
-    if (!card.style.backgroundImage) {
-      const bg = card.getAttribute('data-bg');
-      if (bg) {
-        card.style.backgroundImage = `url(${bg})`;
-        card.style.backgroundSize = 'cover';
-        card.style.backgroundPosition = 'center';
-      }
-    }
   });
 }
 
@@ -115,21 +94,4 @@ function closeModal() {
 window.onload = () => {
   createGalleryPages();
   updateCarousel();
-
-  // Opcional: usar IntersectionObserver para cargar imágenes si el usuario
-  // hace scroll y un `.gallery-page` entra en vista (solo si tienes scroll vertical)
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const page = entry.target;
-          const pageIndex = Array.from(document.querySelectorAll('.gallery-page')).indexOf(page);
-          lazyLoadPage(pageIndex);
-          observer.unobserve(page);
-        }
-      });
-    }, { rootMargin: "100px" });
-
-    document.querySelectorAll('.gallery-page').forEach(page => observer.observe(page));
-  }
 };
