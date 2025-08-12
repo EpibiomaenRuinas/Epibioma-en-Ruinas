@@ -146,39 +146,10 @@ body {
     color: #dcdfc2;
 }
 
-.descripcion{
-    padding: 2%;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-.descripcion h2{
-    font-family: 'Coolvetica Crammed', sans-serif;
-    font-size: 400%;
-    color: #a2c548;
-    text-transform: lowercase;
-    margin-bottom: 10px;
-    letter-spacing: 10px;
-}
-
-.descripcion p{
-    font-family: 'Myriad Pro', sans-serif;
-    font-size: 140%;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #dcdfc2;
-}
-
 .galeria {
   position: relative;
   padding: 20px;
   overflow: hidden;
-}
-
-.title {
-  color: #a2ff5a;
-  font-size: 12px;
-  margin-bottom: 10px;
 }
 
 .carousel-container {
